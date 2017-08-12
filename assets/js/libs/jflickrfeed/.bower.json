@@ -1,0 +1,13 @@
+{
+  "name": "jflickrfeed",
+  "homepage": "https://github.com/Despod/jflickrfeed",
+  "_release": "eb3f7e96fa",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "eb3f7e96fa6877a58c26182eccd5f9af7db91646"
+  },
+  "_source": "git://github.com/Despod/jflickrfeed.git",
+  "_target": "*",
+  "_originalSource": "jflickrfeed"
+}

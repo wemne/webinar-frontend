@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en">
+  <![endif]-->
+  <!--[if IE 7 ]>
+  <html class="ie ie7" lang="en">
+    <![endif]-->
+    <!--[if IE 8 ]>
+    <html class="ie ie8" lang="en">
+      <![endif]-->
+      <!--[if (gte IE 9)|!(IE)]><!-->
+      <html lang="en">
+        <!--<![endif]-->
+        <head>
+          <!-- Basic Page Needs
+            ================================================== -->
+          <meta charset="utf-8">
+          <title>Colio - jQuery Portfolio Content Expander Plugin</title>
+          <meta name="description" content="Portfolio content expander and details viewer plugin">
+          <meta name="author" content="flGravity">
+          <!-- Mobile Specific Metas
+            ================================================== -->
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+          <!-- CSS
+            ================================================== -->
+          <link rel="stylesheet" href="css/base.css">
+          <link rel="stylesheet" href="css/skeleton.css">
+          <link rel="stylesheet" href="css/layout.css">
+          <link rel="stylesheet" href="css/colio.css">
+          <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
+          <!-- JS
+            ================================================== -->
+          <script type="text/javascript" src="js/jquery.min.js"></script>
+          <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+          <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+          <script type="text/javascript" src="js/jquery.browser.js"></script>
+          <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+          <script type="text/javascript" src="js/jquery.colio.min.js"></script>
+          <!-- Colio White Theme
+            ================================================== -->
+          <link rel="stylesheet" href="colio-white/style.css">
+          <link rel="stylesheet" href="colio-white/flexslider/flexslider.css">
+          <script type="text/javascript" src="colio-white/flexslider/jquery.flexslider.js"></script>
+          <script type="text/javascript">
+            $(document).ready(function(){
+            	
+            	// "scrollTop" plugin
+            	$.scrollUp();
+            	
+            	// "colio" plugin
+            	var colio_run = function(){
+            		$('#demo_1').remove();
+            		$('.portfolio .list').colio({
+            			id: 'demo_1',
+            			theme: 'white',
+            			placement: 'before',
+            			onContent: function(content){
+            				// init "flexslider" plugin
+            				$('.flexslider', content).flexslider({slideshow: false, animationSpeed: 300});
+            			}
+            		});
+            	};
+            	
+            	colio_run();
+            				
+            	// "quicksand" plugin
+            	var quicksand_run = function(items){
+            		$('.portfolio .list').quicksand(items, {
+            			retainExisting: false, adjustWidth:false, duration: 500
+            		}, colio_run);
+            	};
+            	
+            	$('.portfolio .list li').each(function(n){
+            		$(this).attr('data-id', n);
+            	});
+            	
+            	var copy = $('.portfolio .list li').clone();
+            	
+            	$('.portfolio .filters a').click(function(){
+            		$(this).addClass('filter-active').siblings().removeClass('filter-active');
+            		var href = $(this).attr('href').substr(1);
+            		filter = href ? '.' + href : '*';
+            		quicksand_run(copy.filter(filter));
+            		return false;
+            	});
+            	
+            });
+          </script>
+          <!-- Favicons
+            ================================================== -->
+          <link rel="shortcut icon" href="images/favicon.ico">
+          <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+          <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+          <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        </head>
+        <body>
+          <div class="container">
+          <header class="sixteen columns main-header">
+            <h1>Colio - jQuery Portfolio Content Expander Plugin</h1>
+          </header>
+          <!-- header -->
+          <!-- SPACER --> 
+          <div class="spacer"></div>
+          <div class="ten columns">
+            <p><em>This preview features Colio plugin in white version with "before" placement and <a href="http://razorjack.net/quicksand/">quicksand</a> filter plugin. Click portfolio item title or "View Project" button to see plugin in action!</em></p>
+            <nav class="nav-links">
+              <a href="index.html">Home</a> /
+              <a href="index_black.html">Black Theme</a> /
+              <a href="docs/index.html">Documentation</a> /
+              <a href="http://codecanyon.net/item/colio-jquery-portfolio-content-expander-plugin/6507310?ref=flGravity">Purchase Colio!</a>
+            </nav>
+            <!-- nav links -->
+          </div>
+          <!-- ten col -->
+          <!-- SPACER --> 
+          <div class="spacer"></div>
+          <div class="sixteen columns">
+            <h2>Portfolio</h2>
+            <div class="portfolio clearfix">
+              <div class="filters">
+                <a href="#" class="filter-active">All</a>
+                <a href="#design">Web Design</a>
+                <a href="#inspiration">Inspiration</a>
+              </div>
+              <!-- filters -->
+              <ul class="list clearfix">
+                <li class="inspiration"  data-content="#colio_c1">
+                  <div class="thumb">
+                    <div class="view">
+                      <a class="button colio-link" href="#">View Project</a>
+                    </div>
+                    <img src="pictures/pic1.jpg" alt="Pic"/>
+                  </div>
+                  <h4><a class="colio-link" href="#">This is title</a></h4>
+                  <p>Few words that describe this work</p>
+                </li>
+                <li class="design inspiration" data-content="#colio_c2">
+                  <div class="thumb">
+                    <div class="view">
+                      <a class="button colio-link" href="#">View Project</a>
+                    </div>
+                    <img src="pictures/pic2.jpg" alt="Pic"/>
+                  </div>
+                  <h4><a class="colio-link" href="#">This is title</a></h4>
+                  <p>Few words that describe this work</p>
+                </li>
+                <li class="design inspiration" data-content="#colio_c1">
+                  <div class="thumb">
+                    <div class="view">
+                      <a class="button colio-link" href="#">View Project</a>
+                    </div>
+                    <img src="pictures/pic3.jpg" alt="Pic"/>
+                  </div>
+                  <h4><a class="colio-link" href="#">This is title</a></h4>
+                  <p>Few words that describe this work</p>
+                </li>
+                <li class="design" data-content="#colio_c2">
+                  <div class="thumb">
+                    <div class="view">
+                      <a class="button colio-link" href="#">View Project</a>
+                    </div>
+                    <img src="pictures/pic4.jpg" alt="Pic"/>
+                  </div>
+                  <h4><a class="colio-link" href="#">This is title</a></h4>
+                  <p>Few words that describe this work</p>
+                </li>
+                <li class="design inspiration" data-content="#colio_c1">
+                  <div class="thumb">
+                    <div class="view">
+                      <a class="button colio-link" href="#">View Project</a>
+                    </div>
+                    <img src="pictures/pic5.jpg" alt="Pic"/>
+                  </div>
+                  <h4><a class="colio-link" href="#">This is title</a></h4>
+                  <p>Few words that describe this work</p>
+                </li>
+                <li class="inspiration" data-content="#colio_c2">
+                  <div class="thumb">
+                    <div class="view">
+                      <a class="button colio-link" href="#">View Project</a>
+                    </div>
+                    <img src="pictures/pic4.jpg" alt="Pic"/>
+                  </div>
+                  <h4><a class="colio-link" href="#">This is title</a></h4>
+                  <p>Few words that describe this work</p>
+                </li>
+                <li class="design" data-content="#colio_c1">
+                  <div class="thumb">
+                    <div class="view">
+                      <a class="button colio-link" href="#">View Project</a>
+                    </div>
+                    <img src="pictures/pic3.jpg" alt="Pic"/>
+                  </div>
+                  <h4><a class="colio-link" href="#">This is title</a></h4>
+                  <p>Few words that describe this work</p>
+                </li>
+                <li class="design inspiration" data-content="#colio_c2">
+                  <div class="thumb">
+                    <div class="view">
+                      <a class="button colio-link" href="#">View Project</a>
+                    </div>
+                    <img src="pictures/pic2.jpg" alt="Pic"/>
+                  </div>
+                  <h4><a class="colio-link" href="#">This is title</a></h4>
+                  <p>Few words that describe this work</p>
+                </li>
+              </ul>
+              <!-- list -->
+            </div>
+            <!-- portfolio -->
+            <div id="colio_c1" class="colio-content">
+              <div class="side">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li><img src="pictures/pic4.jpg" alt="Pic"/></li>
+                    <li><img src="pictures/pic2.jpg" alt="Pic"/></li>
+                    <li><img src="pictures/pic3.jpg" alt="Pic"/></li>
+                    <li><img src="pictures/pic5.jpg" alt="Pic"/></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- side -->
+              <div class="main">
+                <h3>This is "Colio"</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                <a class="visit-link" href="http://codecanyon.net">Visit Site</a>
+              </div>
+              <!-- main -->
+            </div>
+            <!-- colio-content # colio_c1 -->
+            <div id="colio_c2" class="colio-content">
+              <div class="side">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li><img src="pictures/pic1.jpg" alt="Pic"/></li>
+                    <li><img src="pictures/pic2.jpg" alt="Pic"/></li>
+                    <li><img src="pictures/pic3.jpg" alt="Pic"/></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- side -->
+              <div class="main">
+                <h3>Portfolio expanding plugin</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque </p>
+                <p>Laudantium, <a href="http://google.com">totam rem aperiam</a>, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <ul class="social">
+                  <li><a class="facebook" href="http://facebook.com">Facebook</a></li>
+                  <li><a class="twitter" href="http://twitter.com">Twitter</a></li>
+                  <li><a class="google" href="http://google.com">Google</a></li>
+                </ul>
+              </div>
+              <!-- main -->
+            </div>
+            <!-- colio-content # colio_c2 -->
+            <!-- SPACER --> 
+            <div class="spacer"></div>
+            <footer class="sixteen columns">
+              <span class="copyright">&copy; 2013 flGravity. All rights reserved</span>
+            </footer>
+            <!-- footer -->
+          </div>
+          <!-- container -->
+          <!-- End Document
+            ================================================== -->
+        </body>
+      </html>

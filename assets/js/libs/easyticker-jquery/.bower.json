@@ -1,0 +1,14 @@
+{
+  "name": "easyticker-jquery",
+  "homepage": "https://github.com/vaakash/jquery-easy-ticker",
+  "version": "2.0.0",
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.0",
+    "commit": "92e6e76c0a9ea3fb2ba598222f4d78662451f622"
+  },
+  "_source": "git://github.com/vaakash/jquery-easy-ticker.git",
+  "_target": "~2.0.0",
+  "_originalSource": "easyticker-jquery"
+}

@@ -1,0 +1,727 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Slick Modal - HTML5 and CSS3 popups</title>
+	
+	<meta name="author" content="Capelle">
+	<meta name="copyright" content="Capelle">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2013-05-05T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#555;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:red;}
+		hr{border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#45abce;color:#fff;}
+		#documenter_sidebar ol a{color:#fff;}
+		#documenter_sidebar ol a:hover{background:#fff;color:#000;}
+		#documenter_sidebar ol a.current{background:#fff;color:#000;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<div style="margin-bottom: 100px;"></div>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Hello</a></li>
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#structure">The structure</a></li>
+            <li><a href="#installation">Quick install</a></li>
+            <li><a href="#options">Plugin options</a></li>
+            <li><a href="#how-to">Faq</a></li>
+            <li><a href="#tips">Tricks and tips</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#support">Support</a></li>
+		</ol>
+		<div id="documenter_copyright">Copyright Capelle<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Slick Modal - HTML5 and CSS3 modal popups</h1><h2>Documentation</h2><hr>
+	<ul>
+		<li>Created: 30.07.2015</li>
+		<li>Latest Update: 05.12.2015</li>
+		<li>Created by: Capelle</li><li>Profile: <a href="http://codecanyon.net/user/capelle/portfolio">www.codecanyon.net/user/capelle/portfolio</a></li>
+		<li>Support: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#106;&#117;&#115;&#116;&#99;&#97;&#112;&#101;&#108;&#108;&#101;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#106;&#117;&#115;&#116;&#99;&#97;&#112;&#101;&#108;&#108;&#101;&#46;&#99;&#111;&#109;</a></li>
+	</ul><p><span class="subtitle">Thank you for choosing Slick Modals</span><br /><br />Before you get started i suggest you read the documentation and incase you have an issue or you need help, feel free to contact me via email or PM on Codecanyon.</p></section>
+    
+<section id="overview">
+<h3>Overview</h3><hr class="notop">
+<p>Slick Modal are HTML5 and CSS3 popups, which are ment to be easely implementated into almoust any website or CMS system with some basic knowledge of HTML, CSS and/or server side scripting.<br />
+It is a framework for easy installation, customization and development. <b>It is not a CMS plugin, module or widget</b> hence it needs to be installed manually. Slick Modals does not contain premade popup designs, it is a layout/framework popup for your custom popup design/s for static websites or dynamic (CMS).<br /></p>
+<br /><br />
+<span class="subtitle">1. Supported browsers</span><br />
+<ul>
+<li>Google Chrome 20+ (Win)</li>
+<li>Opera 12+ (Win)</li>
+<li>Firefox 20+ (Win)</li>
+<li>Safari 7+ (OSX)</li>
+<li>Internet Explorer 9+ (Win)</li>
+</ul>
+
+<div class="smallinfo"><span>Note 1:</span> Slick Modal is tested in browsers, listed above - on PC and partialy MAC. Older browsers (like Internet Explorer 8 and below) or browsers, which don't support CSS3 features in full, will not render the elements, positions and animations correctly.</div>
+<div class="smallinfo"><span>Note 2:</span> Slick Modal should work on almoust all modern portable devices (IOS and Android based), but it was created and tested to work mainly on desktops and high-res tablets, which support the CSS3 tehniques, used in creating the popup and have higher resolutions.</div>
+
+<br /><br /><br />
+
+<span class="subtitle">2. Supported resolutions</span><br /><br />
+<p>Slick Modal is made to be used for popups with fixed dimensions. If you plan to use responsive content, it's best to adapt your content with css media queries. You can also check the responsive demo which servers as a simple guide for you to create your modal content responsive.</p><br />
+
+
+<span class="subtitle">3. Package contents</span><br />
+<ol>
+<li>Quick start - includes a single demo for a quick start</li>
+<li>Demo layouts - included few basic demo layouts</li>
+<li>Documentation</li>
+<li>changelog.txt</li>
+</ol>
+
+</section>
+
+
+
+<section id="structure">
+<h3>The structure</h3><hr class="notop"><a name="structure"></a>
+
+<p>Slick Modal popup is made from the html elements which define the layout, CSS for basic layout design and JS plugin, which controls the functionality part of the popup.</p>
+<br /><br />
+<span class="subtitle">1. HTML</span>
+<p>The html is very minimal. It consist from unique ID, which is the parent for the window element that holds our popup content inside.</p>
+
+<pre class="brush: css">
+
+<span class="html-comment">&lt;!-- ========== START COPYING HERE ========== --&gt;</span>
+	&lt;div id="popup-1" class="slickModal"&gt;
+		&lt;div class="window"&gt;
+			<span class="html-comment">&lt;!-- Your popup content --&gt;</span>
+			... your content goes here ...
+			<span class="html-comment">&lt;!-- / Your popup content --&gt;</span>
+		&lt;/div&gt;
+	&lt;/div&gt;
+<span class="html-comment">&lt;!-- ========== END COPYING HERE ========== --&gt;</span>
+
+</pre>
+
+<ul>
+	<li>Main selector has an ID, which defines the popup as unique element on the page. This is important as the jQuery plugin needs to have it defined within the options and with that it can "connect" the give options with that element.</li>
+	<li>Main selector has class "slickModal" which defines him appropriate styles from the css and functionlities from the jQuery plugin.</li>
+	<li>jQuery plugin dynamically creates an overlay within the main selector if we give it that option inside the plugin.</li>
+	<li>Main selector holds the "window" element, which is our popup. Inside it you copy your elements which will be visible upon modal visibility.</li>
+	<li>jQuery plugin dynamically creates closeModal element, which is our closing button/label.</li>
+</ul><br />
+
+<span class="subtitle">2. CSS</span>
+
+<p>The CSS is made for basic popup styling and layout functionlities. It can be modified if needed but most of our styling here is just a basic fallback if none of the jQuery plugin options are selected. The CSS structure is made from:</p>
+<ul>
+	<li>Reset and basics - reset styles to give our popup consistency across the browsers.</li>
+	<li>Background defaults - here are default settings for the background effects.</li>
+	<li>Modal window positions - positions for the our popup window.</li>
+	<li>Modal window transitions - predefined window transitions.</li>
+	<li>Transition timing defaults - predefined window transition timings.</li>
+	<li>Close buttons - styling for the close buttons.</li>
+</ul>
+
+<span class="subtitle">3. jQuery plugin</span>
+
+<p>As mentioned jQuery plugin controls the functionality part of the popup. We invoke/call our options right inside the js file. Below is an example of a simple popup:</p>
+
+<pre class="brush: css">
+
+// Plugin invoke
+$(document).ready(function () {
+    $("#ourPopup-1").slickModals({
+        popupType: "scroll",
+        delayTime: 1000,
+        exitTopDistance: 40,
+        scrollTopDistance: 400,
+        setCookie: false,
+        cookieDays: null,
+        cookieTriggerClass: "",
+        cookieName: "",
+
+        // Overlay options
+        overlayBg: false,
+        overlayBgColor: "",
+        overlayTransition: "",
+        overlayTransitionSpeed: "",
+
+        // Background effects
+        bgEffect: "scale",
+        blurBgRadius: "2px",
+        scaleBgValue: "0.9",
+
+        // Window options
+        windowWidth: "480px",
+        windowHeight: "250px",
+        windowLocation: "center",
+        windowTransition: "ease",
+        windowTransitionSpeed: "0.4",
+        windowTransitionEffect: "zoomIn",
+        windowShadowOffsetX: "0",
+        windowShadowOffsetY: "0",
+        windowShadowBlurRadius: "20px",
+        windowShadowSpreadRadius: "0",
+        windowShadowColor: "rgba(0,0,0,0.3)",
+        windowBackground: "rgba(255,255,255,1)",
+        windowRadius: "12px",
+        windowMargin: "auto",
+        windowPadding: "30px",
+
+        // Close and reopen button
+        closeButton: "icon",
+        reopenClass: "openSlickModal-1",
+    });
+});
+
+</pre>
+
+</section>
+
+
+
+    
+<section id="installation">
+<h3>Quick Installation</h3><hr class="notop"><a name="quick-install"></a>
+
+<p>In order to install Slick Modal popup into your html page, follow these few simple steps:<br /><br /></p>
+<span class="subtitle">1. COPY THE HTML ELEMENTS</span>
+<p>Open the <b>1. Quick start</b> folder. Then open index.html document with your favorite text editor.<br />
+Once opened in editor, simply select all the code between the main comments ("START COPYING HERE" and "END COPYING HERE") and copy selected code to your document file <b>right before closing &lt;/body&gt; tag</b> at the end of your page.</p>
+<pre class="brush: css">
+
+<span class="html-comment">&lt;!-- START COPYING HERE --&gt;</span>
+	...
+	select all the code between the comments and copy/paste to your document
+	...
+<span class="html-comment">&lt;!-- / END COPYING HERE --&gt;</span>
+
+</pre>
+<br /><br />
+<div class="smallinfo"><span>Note 1:</span> For Slick Modal popup to work properly, it's best to copy all the code into first level between &lt;body&gt; tags at the bottom of your page right before closing &lt;/body&gt; tag. It's not recommended to nest the popup inside other elements, as it might brake the design layout or put the Slick Modal popup behind another element on the page.</div>
+<br /><br /><br /><br />
+
+
+
+
+
+
+
+<span class="subtitle">2. INSERT YOUR ELEMENTS INSIDE THE HTML</span>
+<p>When you have pasted the html code then insert your elements between the "Your popup content" and "/ Your popup content" comments. You can put anything inside it, your Contact form, signup form, video, map... any element.</p>
+
+<pre class="brush: css">
+
+<span class="html-comment">&lt;!-- ========== START COPYING HERE ========== --&gt;</span>
+	&lt;div id="popup-1" class="slickModal"&gt;
+		&lt;div class="window"&gt;
+			<span class="html-comment">&lt;!-- Your popup content --&gt;</span>
+			... your content goes here ...
+			<span class="html-comment">&lt;!-- / Your popup content --&gt;</span>
+		&lt;/div&gt;
+	&lt;/div&gt;
+<span class="html-comment">&lt;!-- ========== END COPYING HERE ========== --&gt;</span>
+
+</pre>
+
+<br /><br />
+<div class="smallinfo"><span>Note 1:</span> You can insert any image, iframe, video or element inside the Slick Modals.</div>
+<br /><br /><br /><br />
+
+
+
+
+
+<span class="subtitle">3. CALL THE CSS AND JQUERY PLUGIN</span>
+<p>Upload Slick Modal css and jquery file into your chosen folder on your webserver or local site. <b>It's recommended that you use minified versions of both files for better performance.</b><br />
+Then call the css and jquery file. Call CSS from the &lt;head&gt; section and if possible call the jquery plugin right before closing &lt;/body&gt; tag for better performance. Below is a demo of callings:</p>
+
+<pre class="brush: css">
+
+	&lt;head&gt;
+		...
+		&lt;link rel="stylesheet" type="text/css" href="yourPath/sm-minified.css" media="screen" /&gt;
+		...
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		...
+		&lt;script type="text/javascript" src="yourPath/jquery.slick-modals.min.js"&gt;&lt;/script&gt;
+	&lt;/body&gt;
+
+</pre>
+
+<br /><br />
+<div class="smallinfo"><span>Note 1:</span> Be sure to match the path to the files where you have uploaded them.</div>
+<div class="smallinfo"><span>Note 2:</span> Call the Slick Modal jQuery plugin after you call your jQeury library.</div>
+<br /><br /><br /><br />
+
+
+
+
+
+<span class="subtitle">4. ADJUST THE PLUGIN SETTINGS</span>
+<p>Open the Slick Modals jQuery plugin file and adjust the settings at the plugin invoke section. Also <b>adjust the main ID selector</b> which will control the modal setup.</p>
+
+<pre class="brush: css">
+
+// Plugin invoke
+$(document).ready(function () {
+    ... plugin settings (read more about them below) ...
+});
+
+</pre>
+
+<br /><br />
+<div class="smallinfo"><span>Note 1:</span> You call the plugin invoke inside the Slick Modal JS file. No need to call it again alone within the head or body.</div>
+<br /><br /><br /><br />
+
+
+
+</section>
+
+
+
+
+<section id="options">
+<h3>Plugin options</h3><hr class="notop">
+<p>Your popup consist from the options you give it by changing the settings <b>inside the Slick jQuery file</b>.<br />
+They give you control of modal's functionality, look and feel. Below is an explanation of all avaliable options:</p><br />
+
+
+
+
+<div class="smallinfo"><span style="padding: 4px;">popupType</span> = Defines your popup type. Avaliable options: <b>delayed, scrolled, exit</b></div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">delayTime</span> = delay time in miliseconds of delayed popup type. Can be any <b>numerical value</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">exitTopDistance</span> = distance in px from the top of window for exit popup type. Can be any <b>numerical value</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">scrollTopDistance</span> = distance in px from the top of window for scrolled popup type. Can be any <b>numerical value</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">setCookie</span> = defines if the popup will set a cookie and hide it self for a period of time from the user. Possible options are <b>true</b> or <b>false</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">cookieDays</span> = defines a number of days for the cookie to be active. Default is <b>null</b>. For session cookie use number <b>0</b> and for X period of days give it a desired <b>numerical value</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">cookieTriggerClass</span> = a class used to trigger the cookie for each modal when using multiple popups. Classes between multiple popups must not be the same or else for example the cookie from modal A will be set on modal B. Default is <b>setSlickCookie</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">cookieName</span> = specify a cookie name for each modal when using multiple popups. Cookie name must be different for each popup. Default is <b>slickCookie</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">overlayBg</span> = specify if overlay should be active or not. Possible options are <b>true</b> or <b>false</b>. If you set it to false the modal will have no background overlay.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">overlayBgColor</span> = specify the overlay background color. You can insert any <b>RGB</b> or <b>HEX</b> value. In rgba mode last value controls the opacity (default is 0.85).</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">overlayTransition</span> = specify the overlay transition. You can use <b>linear, ease, ease-in, ease-out, ease-in-out</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">overlayTransitionSpeed</span> = specify the overlay transition speed. Can be any <b>decimal numerical value</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">bgEffect</span> = defines effect on the page background upon opening a modal. You can set <b>blur, scale, both</b>, <b>null</b> or <b>leave it empty</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">blurBgRadius</span> = specify the background blur radius. Can be any <b>numerical value in px</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">scaleBgValue</span> = specify the background scale depth. Can be any <b>decimal numerical value</b>. Above 1 it scales up, below 1 scales down.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowWidth</span> = specify modal window width. Can be any <b>numerical value in px or percentage</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowHeight</span> = specify modal window height. Can be any <b>numerical value in px or percentage</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowLocation</span> = specify modal window location on screen. You can use <b>center, topLeft, topCenter, topRight, bottomLeft, bottomCenter, bottomRight, left, right</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowTransition</span> = specify modal window transition. You can use <b>linear, ease, ease-in, ease-out, ease-in-out</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowTransitionSpeed</span> = specify modal window transition speed. Can be any <b>decimal numerical value</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowTransitionEffect</span> = specify modal window transition effect. You can use <b>fade, zoomIn, zoomOut, slideTop, slideBottom, slideLeft, slideRight, rotateIn, rotateOut, flipHorizontal, flipVertical, perspectiveTop, perspectiveBottom, perspectiveLeft, perspectiveRight</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowShadowOffsetX</span> = specify modal window shadow X offset. Can be any <b>numerical value in px</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowShadowOffsetY</span> = specify modal window shadow Y offset. Can be any <b>numerical value in px</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowShadowBlurRadius</span> = specify modal window shadow blur radius. Can be any <b>numerical value in px</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowShadowSpreadRadius</span> = specify modal window shadow spread radius. Can be any <b>numerical value in px</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowShadowColor</span> = specify modal window shadow color. Can be any <b>RGBA</b> or <b>HEX</b> value.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowBackground</span> = specify modal window background color. Can be any <b>RGBA</b> or <b>HEX</b> value.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowRadius</span> = specify modal window border radius. Can be any <b>numerical value in px</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowMargin</span> = specify modal window margins. Can be any <b>numerical value in px</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">windowPadding</span> = specify modal window inner padding. Can be any <b>numerical value in px</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">closeButton</span> = chooses a close icon for modal window. You can use <b>labeled, tag, icon, text</b>.</div>
+
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">reopenClass</span> = specify the class to reopen the modal. Use this class in your html element. You can use <b>your own class naming</b>. for each popup separately</div>
+
+<hr>
+<p style="font-size: 14px; font-weight: bold;">Be sure to use avaliable options only (in above specification). See where you need to use quotation marks and specific units (pixels, percentages...). For reference see the setup below:</p>
+
+
+<pre class="brush: css">
+
+// Plugin invoke
+$(document).ready(function () {
+    $("#popup-1").slickModals({
+        popupType: "delayed",
+        delayTime: 1000,
+        exitTopDistance: 40,
+        scrollTopDistance: 400,
+        setCookie: true,
+        cookieDays: 0,
+        cookieTriggerClass: "setCookie-1",
+        cookieName: "slickModal-1",
+
+        // Overlay options
+        overlayBg: true,
+        overlayBgColor: "rgba(0,0,0,0.85)",
+        overlayTransition: "ease",
+        overlayTransitionSpeed: "0.4",
+
+        // Background effects
+        bgEffect: "scale",
+        blurBgRadius: "2px",
+        scaleBgValue: "0.9",
+
+        // Window options
+        windowWidth: "500px",
+        windowHeight: "300px",
+        windowLocation: "bottomRight",
+        windowTransition: "ease",
+        windowTransitionSpeed: "0.4",
+        windowTransitionEffect: "zoomIn",
+        windowShadowOffsetX: "0",
+        windowShadowOffsetY: "0",
+        windowShadowBlurRadius: "20px",
+        windowShadowSpreadRadius: "0",
+        windowShadowColor: "rgba(0,0,0,0.3)",
+        windowBackground: "rgba(255,255,255,1)",
+        windowRadius: "12px",
+        windowMargin: "30px",
+        windowPadding: "30px",
+
+        // Close and reopen button
+        closeButton: "icon",
+        reopenClass: "openSlickModal-1",
+    });
+});
+
+</pre>
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="how-to">
+<h3>Faq</h3><hr class="notop">
+<p>In this section we'll cover few basics with Slick Modal popup and some pointers on How to and Faq.</p><br />
+<br /><br />
+<span class="subtitle">1. How do i set multiple popups on the page?</span><br />
+<p>In order to have two or more modals you should create two html popup elements with different ID's and call the plugin settings for each of them. For example:</p>
+
+<div class="smallinfo"><span style="padding: 4px;">1. HTML</span></div>
+
+<pre>
+	
+<span class="html-comment">&lt;!-- ========== YOUR FIRST POPUP ========== --&gt;</span>
+&lt;div id="popup-1" class="slickModal"&gt;
+	&lt;div class="window"&gt;
+		<span class="html-comment">&lt;!-- Your popup content --&gt;</span>
+		... your content for popup 1 goes here ...
+		<span class="html-comment">&lt;!-- / Your popup content --&gt;</span>
+	&lt;/div&gt;
+&lt;/div&gt;
+
+<span class="html-comment">&lt;!-- ========== YOUR SECOND POPUP ========== --&gt;</span>
+&lt;div id="popup-2" class="slickModal"&gt;
+	&lt;div class="window"&gt;
+		<span class="html-comment">&lt;!-- Your popup content --&gt;</span>
+		... your content for popup 2 goes here ...
+		<span class="html-comment">&lt;!-- / Your popup content --&gt;</span>
+	&lt;/div&gt;
+&lt;/div&gt;
+
+</pre>
+<br /><br />
+<div class="smallinfo"><span style="padding: 4px;">2. JQUERY</span></div>
+
+<pre>
+
+// Plugin invoke
+$(document).ready(function () {
+    $("#popup-1").slickModals({
+        ... settings for popup 1 ...
+    });
+    $("#popup-2").slickModals({
+        ... settings for popup 2 ...
+    });
+});
+
+</pre>
+<p>You can also check out the demo inside <b>2. Demo layouts/7. Multiple popups</b> folder.</p>
+
+<br /><br /><br /><br />
+<span class="subtitle">2. How do i make popup responsive?</span><br />
+<p>You can specify the popup initial width and height in pixels or percentages and use those values for responsivnes. You can also fine tune it via css media queries. For example - we wish the modal window has a 90% screen width at 480px viewport and smaller:</p>
+<pre>
+	
+@media screen and (max-width: 480px) {
+	.slickModal .window {
+		width: 90% !important;
+	}
+}
+
+</pre>
+<div class="smallinfo"><span>Note 1:</span>Note that initial modal size values are inline styles so you have to use !important atribute to your media querie values. More on CSS3 media queries <a href="http://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank">avaliable here</a>. You can also check the demo helper which is located in folder 2. Demo layouts/1. Contact form - responsive. At the bottom of the sm.css you will notice the media queries which serve as breakpoints for changing the layout and it's elements at certain screen sizes. You can target specific viewport width, height, their min/max breakpoints, media types and other settings. Within those rules you can then adjust every element and it's css attributes.</div>
+
+<br /><br /><br /><br /><br />
+<span class="subtitle">3. We are using a form. How to hide modal on submit?</span><br />
+<p>To hide a modal simply add a class "closeModal" to element that submits the form. For example, if you have input that submits the form you can add a class to it:</p>
+
+<pre>
+	
+&lt;input type="submit" class"closeModal-1" value="Submit" /&gt;
+
+</pre>
+
+<div class="smallinfo"><span>Note 1:</span> Be sure to define the closing class in the jQuery plugin and use the same class inside your element.</div>
+<br /><br />
+<br /><br /><br />
+<span class="subtitle">4. I use a promo banner. How can i hide the popup on banner link click?</span><br />
+<p>As mentioned, to hide a modal simply add a class to element you wish (same as the previous answer).</p>
+
+<br /><br /><br />
+<span class="subtitle">5. I'm using a CMS, how can i install the modal?</span><br />
+<p>Altough Slic Modal is not made as a plugin or module it can still be installed manualy into any CMS. You can follow the quick <a href="#installation">install guide</a> by editing coresponding CMS template files. Be sure to create backup before manual installation.</p>
+
+
+<br /><br /><br />
+<span class="subtitle">6. I'm trying to set topCenter position, but the popup keeps showing on the left</span><br />
+<p>As window is absolutely positioned it needs margin auto in certain locations. You set these values with <b>windowMargin</b> within plugin settings upon invoke. For example:<br /><br />
+- TopCenter location needs <b>windowMargin: 0 auto</b> (0 can be any desired value),<br />
+- Left / right location also needs <b>windowMargin: 0 auto</b> (0 can be any desired value).<br />
+</p>
+
+
+<br /><br /><br />
+<span class="subtitle">7. I'm having a conflict issue with jQuery and other libraries</span><br />
+<p>Sometimes when using various libraries on the site (like prototype, mootols and others) it might get in conflict with jQuery and the plugin or other script might not work. In that case instead of using jquery.slick-modals.min from js folder you can use <b>noConflict plugin which is located in 1. Quick start/js/noConflict folder</b>.</p>
+
+<br /><br /><br />
+<span class="subtitle">8. Why is there a 2. Demo layouts folder?</span><br />
+<p>The demos in that folder are for reference and demo purpouses only for your ease of use. You can use them for your own projects, but the support for modifications and extended functionality of those demos is not provided.</p>
+
+<br /><br /><br />
+<span class="subtitle">9. How do i change the "Close" text on the closing button?</span><br />
+<p>Edit the Slick css and search for <b>content: "Close"</b> with the editors search command if you are using minified Slick css or look for the following selector and change the text inside the content attribute:</p>
+
+<pre>
+.slickModal .close.text:before {
+	color: #fff;
+	content: "Close";
+	font-size: 9px;
+	text-transform: uppercase;
+}
+</pre>
+
+<br /><br /><br />
+<span class="subtitle">10. How can i make the overlay to be a background image?</span><br />
+<p>Open the Slick Modal jQuery and add a background url to the overlayBgColor option, like this:</p>
+<pre>
+	overlayBgColor: "url('images/bg.jpg') no-repeat center center / cover",
+</pre>
+<p>You can also check out the demo inside <b>2. Demo layouts/8. Background image</b> folder.</p>
+<div class="smallinfo"><span>Note 1:</span> First value is the background path, second is no-repeat, which prevents the image to repeat. Next is center center which centers the image. And last is cover which stretches the image across the screen.</div>
+<div class="smallinfo"><span>Note 2:</span> Note the single and double quotes. Single can be outside the string and double inside the url of the background image path.</div>
+<br /><br /><br /><br />
+<br />
+
+<span class="subtitle">11. Can i show the modal only on certain pages?</span><br />
+<p>You can do that by wrapping the plugin options inside the Slick Modal jQuery file inside the if statement. As an example below we wrapped the plugin options inside the <b>if statement</b> which will show the popup only on page which contains "yourUrl" string inside the url:</p>
+
+<pre>
+// Plugin invoke
+$(document).ready(function () {
+    if (window.location.href.indexOf("yourUrl") > -1) {
+        $("#popup-1").slickModals({
+            // Functionality
+            popupType: "delayed",
+            delayTime: 1000,
+            exitTopDistance: 40,
+            scrollTopDistance: 400,
+            setCookie: true,
+            cookieDays: 0,
+            cookieTriggerClass: "setCookie-1",
+            cookieName: "slickModal-1",
+
+            // Overlay options
+            overlayBg: true,
+            overlayBgColor: "rgba(0,0,0,0.85)",
+            overlayTransition: "ease",
+            overlayTransitionSpeed: "0.4",
+
+            // Background effects
+            bgEffect: "scale",
+            blurBgRadius: "2px",
+            scaleBgValue: "0.9",
+
+            // Window options
+            windowWidth: "500px",
+            windowHeight: "300px",
+            windowLocation: "bottomRight",
+            windowTransition: "ease",
+            windowTransitionSpeed: "0.4",
+            windowTransitionEffect: "zoomIn",
+            windowShadowOffsetX: "0",
+            windowShadowOffsetY: "0",
+            windowShadowBlurRadius: "20px",
+            windowShadowSpreadRadius: "0",
+            windowShadowColor: "rgba(0,0,0,0.3)",
+            windowBackground: "rgba(255,255,255,1)",
+            windowRadius: "12px",
+            windowMargin: "30px",
+            windowPadding: "30px",
+
+            // Close and reopen button
+            closeButton: "icon",
+            reopenClass: "openSlickModal-1",
+        });
+    }
+});
+</pre>
+
+<br /><br /><br /><br />
+<br />
+
+<span class="subtitle">12. How do i make the popup to be visible only when visitors clicks on certain element?</span><br />
+<p>You can disable the popup's type so it's not delayed, scroll or exit simply by leaving <b>empty quotes</b> in the plugin popupType options like this:</p>
+
+<pre>
+$(document).ready(function () {
+    $("#popup-1").slickModals({
+        // Functionality
+        popupType: "",
+        ...
+    });
+});
+</pre>
+
+<br /><br /><br /><br />
+<br />
+
+<span class="subtitle">13. How do i configure the countdown in the demos?</span><br />
+<p>Countdown in the demos is made by 3rd author. That author provides simple explanation within the plugin comments and on it's website: <a href="http://devingredients.com/jcounter" target="_blank">jCounter</a> which should be fairly easy to setup. Within the plugin you can also change the timezone and translations.</p>
+
+</section>
+
+
+
+
+
+
+<section id="tips">
+<h3>Tricks and tips</h3><hr class="notop"><br />
+
+<span class="subtitle">1. Don't mix same popup types</span>
+<p>In order for popup's to show properly you shouldn't mix popup types when using multiple popups. For example, popup-1 can have a delayed type, but popup-2 should have scrolled or exit type. Keep an eye so that popups don't overlap themselfs.</p>
+<br /><br /><br />
+<span class="subtitle">2. Don't overdo blur or scale effect</span>
+<p>Blur & scale are nice effects but they also affect the site performance as it has to redraw all the elements upon firing the animation. So to make your site more user friendly it's recommended to use lower blur and scale values. Optimal is 1-2 px for blur and 0.9 or 1.1 for scale. It's not recommended to use them both simultaneously on the same page as it will reduce the performance of the site dramatically.</p>
+<br /><br /><br />
+<span class="subtitle">3. Debug</span>
+<p>If you're stuck with your layout and have issues you can't fix immidiately, i recommend you first try to debug the site with firebug or native browser element inspector (eg. right click --> Inspect element).<br />
+This will also help you build your custom layout faster and understand the shematics of how things work in Slick Modal popup.</p>
+<br /><br /><br />
+<span class="subtitle">4. Use minified version</span>
+<p>From the performance point it is good practice to use minifed css and js version of the Slick Modal.</p>
+
+</section>
+
+<section id="notes">
+<h3>Additional notes</h3><hr class="notop">
+<div class="smallinfo"><span>Note 1:</span> The layout and functionalities of the item's and their inner elements won't work properly in non supported CSS3 browsers.</div>
+<div class="smallinfo"><span>Note 2:</span> To view this documentation properly, it is recommended to view it on resolution 1280px of width or above.</div>
+<div class="smallinfo"><span>Note 3:</span> If you don't understand implementation steps and usage, feel free to contact me. I'm  not responsible for any data lost or other damage, which was formed during installation or usage of this items and their elements. Always create backups.</div>
+<br /><br /><br /><br />
+<span class="subtitle">Credits</span><br />
+<p>Special thanks for jCounter countdown plugin to <a href="http://devingredients.com/jcounter" target="_blank">Catalin Berta</a>.</p>
+</section>
+
+<section id="support">
+<h3>Support</h3><hr class="notop"><a name="support-team"></a>
+<p>If you get stuck with the installation, usage or modification of the item's, contact me via email <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#106;&#117;&#115;&#116;&#99;&#97;&#112;&#101;&#108;&#108;&#101;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#106;&#117;&#115;&#116;&#99;&#97;&#112;&#101;&#108;&#108;&#101;&#46;&#99;&#111;&#109;</a> or send me a message on <a href="http://codecanyon.net/user/Capelle" target="_blank">Codecanyon</a>.<br />
+When you submit a support ticket, please provide much information as possible, for example:<br /><br />
+- Your Envato username<br />
+- Detailed issue<br />
+- URL where you use the item<br />
+<br /><br />
+<span class="subtitle">Thank you again for using Slick Modal. Dont forget to rate :)</span><br />
+<img src="images/stars.png" style="margin-top:20px;" />
+
+</p>
+</section>
+
+	</div>
+</body>
+</html>

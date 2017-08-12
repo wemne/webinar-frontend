@@ -1,0 +1,72 @@
+.colio-theme-white{margin-right:20px}
+.colio-theme-white .colio-container{background:#eaeaea;border:1px solid #e0e0e0}
+.colio-theme-white.colio-placement-before{margin-bottom:0}
+.colio-theme-white.colio-placement-before.colio-expanded{margin-bottom:20px}
+.colio-theme-white .colio-close span{display:inline-block;width:24px;height:24px;text-indent:-9999px}
+.colio-theme-white .colio-close{position:absolute;top:16px;right:16px}
+.colio-theme-white .colio-close span{background:url(images/controls.png) no-repeat -48px 0}
+.colio-theme-white .colio-close:hover{opacity:.8}
+.colio-theme-white .colio-navigation{position:absolute;top:50px;right:40%;left:auto;margin-right:-70px}
+.colio-theme-white .colio-navigation span{display:inline-block;width:24px;height:24px;text-indent:-9999px}
+.colio-theme-white .colio-navigation a{float:left;padding:5px;margin-right:5px;background:#d1d1d1;-webkit-transition:background .1s;-moz-transition:background .1s;-o-transition:background .1s;transition:background .1s}
+.colio-theme-white .colio-navigation a:hover{background:#ff5452}
+.colio-theme-white .colio-prev span{background:url(images/controls.png) no-repeat 0 0}
+.colio-theme-white .colio-next span{background:url(images/controls.png) no-repeat -24px 0}
+.colio-theme-white .colio-no-prev,.colio-theme-white .colio-no-next{background:#ccc!important}
+.colio-theme-white .side{float:left;width:60%;padding-right:40px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.colio-theme-white .main{float:left;width:40%;padding-right:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.colio-theme-white{color:#666}
+.colio-theme-white a,.colio-theme-white a:visited{color:#47dfff;font-weight:700;text-decoration:none}
+.colio-theme-white a:hover{color:#555}
+.colio-theme-white .main h3{padding:0;margin:70px 0 14px;color:#555}
+.colio-theme-white .visit-link{display:inline-block;text-transform:uppercase;letter-spacing:.05em}
+.colio-theme-white .visit-link:after{content:"\2192";position:relative;top:-1px;margin-left:5px}
+.colio-theme-white .flexslider{position:relative;padding:2px;background:#fff;border:1px solid #cecece}
+.colio-theme-white .flexslider li{padding:0;margin:0}
+.colio-theme-white .flex-control-nav{float:left;position:relative;left:50%;margin-top:15px}
+.colio-theme-white .flex-control-nav li{float:left;position:relative;left:-50%;margin:0 5px;line-height:0}
+.colio-theme-white .flex-control-nav a{display:block;width:10px;height:10px;background:#d2d2d2;border-radius:5px;-moz-border-radius:5px;text-indent:-9999px;cursor:pointer;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+.colio-theme-white .flex-control-nav .flex-active{background:#b6b6b6}
+.colio-theme-white .flex-direction-nav .flex-prev,.colio-theme-white .flex-direction-nav .flex-next{position:absolute;height:100%;width:50%;text-indent:-9999px;z-index:10}
+.colio-theme-white .flex-direction-nav .flex-next{top:0;right:0}
+.colio-theme-white .flex-direction-nav .flex-prev{top:0;left:0}
+.colio-theme-white .social{width:100%;margin-bottom:21px;overflow:hidden}
+.colio-theme-white .social li{float:left;margin:0 7px 0 0}
+.colio-theme-white .social a{display:inline-block;width:24px;height:24px;text-indent:-9999px;opacity:.8;border-radius:12px;-moz-border-radius:12px;background-size:24px 24px!important}
+.colio-theme-white .social a:hover{opacity:1;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}
+.colio-theme-white .social .delicious{background:url(images/social/delicious.png) no-repeat center}
+.colio-theme-white .social .digg{background:url(images/social/digg.png) no-repeat center}
+.colio-theme-white .social .dribble{background:url(images/social/dribble.png) no-repeat center}
+.colio-theme-white .social .ember{background:url(images/social/ember.png) no-repeat center}
+.colio-theme-white .social .facebook{background:url(images/social/facebook.png) no-repeat center}
+.colio-theme-white .social .flickr{background:url(images/social/flickr.png) no-repeat center}
+.colio-theme-white .social .forrst{background:url(images/social/forrst.png) no-repeat center}
+.colio-theme-white .social .google{background:url(images/social/google.png) no-repeat center}
+.colio-theme-white .social .last_fm{background:url(images/social/last_fm.png) no-repeat center}
+.colio-theme-white .social .linkedin{background:url(images/social/linkedin.png) no-repeat center}
+.colio-theme-white .social .my_space{background:url(images/social/my_space.png) no-repeat center}
+.colio-theme-white .social .quora{background:url(images/social/quora.png) no-repeat center}
+.colio-theme-white .social .rss{background:url(images/social/rss.png) no-repeat center}
+.colio-theme-white .social .sharethis{background:url(images/social/sharethis.png) no-repeat center}
+.colio-theme-white .social .skype{background:url(images/social/skype.png) no-repeat center}
+.colio-theme-white .social .stumbleupon{background:url(images/social/stumbleupon.png) no-repeat center}
+.colio-theme-white .social .tumblr{background:url(images/social/tumblr.png) no-repeat center}
+.colio-theme-white .social .twitter{background:url(images/social/twitter.png) no-repeat center}
+.colio-theme-white .social .vimeo{background:url(images/social/vimeo.png) no-repeat center}
+.colio-theme-white .social .youtube{background:url(images/social/you_tube.png) no-repeat center}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+.colio-theme-white .colio-prev span{background:url(images/controls@2x.png) no-repeat 0 0;background-size:72px 24px}
+.colio-theme-white .colio-next span{background:url(images/controls@2x.png) no-repeat -24px 0;background-size:72px 24px}
+.colio-theme-white .colio-close span{background:url(images/controls@2x.png) no-repeat -48px 0;background-size:72px 24px}
+}
+@media only screen and (max-width: 767px) {
+.colio-theme-white .main,.colio-theme-white .side{clear:both;width:100%;padding:0}
+.colio-theme-white .side{margin-bottom:40px;margin-top:60px}
+.colio-theme-white .main{margin-bottom:0}
+.colio-theme-white .colio-navigation{top:40px;left:40px;right:auto}
+.colio-theme-white .main h3{margin-top:0}
+}
+@media only screen and (max-width: 479px) {
+.colio-theme-white .colio-container{padding:30px}
+.colio-theme-white .colio-navigation{top:40px;left:30px;right:auto}
+}

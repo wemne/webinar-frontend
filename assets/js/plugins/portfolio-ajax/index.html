@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Colio - jQuery Portfolio Content Expander Plugin</title>
+	<meta name="description" content="Portfolio content expander and details viewer plugin">
+	<meta name="author" content="flGravity">
+	
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- JS
+	================================================== -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+
+	
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+</head>
+<body>
+
+	<div class="container">
+					
+		<header class="sixteen columns main-header">
+		
+			<h1>Colio - jQuery Portfolio Content Expander Plugin</h1>
+		
+		</header><!-- header -->
+		
+		
+		<!-- SPACER --> <div class="spacer"></div>
+		
+					
+		<div class="ten columns">
+			
+			<h2>About</h2>
+			
+			<p>Using Colio plugin you can display details about your portfolio items on the same page in form of expandable viewport that can be placed before, inside or after portfolio grid. Colio plugin comes in two versions - black and white, is compatible with <a href="http://isotope.metafizzy.co">isotope</a> and <a href="http://razorjack.net/quicksand/">quicksand</a> filter plugins and works on tablets and mobile phones.</p>
+						
+			<p>So give it a try, check examples below, and start adding Colio to your projects!</p>
+			
+		</div><!-- ten col -->
+		
+		<div class="five columns offset-by-one purchase">
+						
+			<a class="button button-purchase" href="http://codecanyon.net/item/colio-jquery-portfolio-content-expander-plugin/6507310?ref=flGravity">Purchase for $8</a>
+			<em>One client, single domain license</em>
+					
+		</div><!-- five col -->
+		
+		
+		<!-- SPACER --> <div class="spacer"></div>
+		
+		
+		<div class="seven columns">
+		
+			<h3>Black Theme</h3>
+		
+			<div class="preview-theme">
+				<a href="index_black.html" title="Black Theme, Inside Placement">
+					<img src="images/black_theme.jpg" alt="Black Theme" />
+				</a>
+			</div>
+			
+			<p><em>This preview features Colio plugin in black version with "inside" placement and <a href="http://isotope.metafizzy.co">isotope</a> filter plugin. Click screenshot to open preview!</em></p>
+		
+		</div><!-- eight col // black theme -->
+		
+		
+		
+		<div class="seven columns offset-by-two">
+		
+			<h3>White Theme</h3>
+			
+			<div class="preview-theme">
+				<a href="index_white.html" title="White Theme, Before Placement">
+					<img src="images/white_theme.jpg" alt="White Theme" />
+				</a>
+			</div>
+			
+			<p><em>This preview features Colio plugin in white version with "before" placement and <a href="http://razorjack.net/quicksand/">quicksand</a> filter plugin. Click screenshot to open preview!</em></p>
+		
+		</div><!-- eight col // white theme -->
+	
+		
+		<!-- SPACER --> <div class="spacer"></div>
+		
+		
+		<footer class="sixteen columns">
+			
+			<span class="copyright">&copy; 2013 flGravity. All rights reserved</span>
+		
+		</footer><!-- footer -->
+
+
+	</div><!-- container -->
+	
+
+<!-- End Document
+================================================== -->
+
+<script type="text/javascript">
+	$(function(){
+		// "scrollTop" plugin
+		$.scrollUp();
+		// "hover" on theme preview
+		$('.preview-theme').hover(function(){
+			$('img', this).stop().fadeTo(500, 0.7);
+		}, function(){
+			$('img', this).stop().fadeTo(500, 1);
+		});
+	});
+</script>
+
+</body>
+</html>
+		

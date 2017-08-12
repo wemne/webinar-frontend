@@ -1,0 +1,45 @@
+******* CHANGLE LOG ********
+
+05.12.2015
+- added new demos (Social share, Cookie notices, Special countdowns, Facebook page)
+- updated documentation
+
+30.11.2015
+- added new demos (Multiple popups, Background image, Panorama view & Random stats)
+- updated documentation and refreshed the content, specially FAQ, Tips & Tricks and some definitions
+
+18.10.2015
+- added responsive demo helper (2. Demo layouts / 1. Contact form - responsive)
+- updated documentation
+
+10.10.2015
+- added common demo layouts
+- updated documentation
+
+06.10.2015
+- complete plugin rewrite
+- code optimization
+- added exit and scroll popup types
+- added new background effect
+- added option to set custom cookie name
+- added option to set session cookie
+- now you can have multiple popups on the same page
+- additional 10+ various plugin options
+- all functional options are now avaliable via plugin settings,
+- all styling options are now avaliable via plugin settings,
+- updated documentation
+
+31.08.2015
+- change on load to document ready plugin invoke, which will call the plugin earlier
+- updated documentation
+
+08.08.2015
+- Advanced options are now a jQuery plugin
+- Optimization
+- Added new transition: blur
+- Updated documentation
+- Removed Show on scroll function (it was buggy)
+
+30.07.2015
+
+- First release

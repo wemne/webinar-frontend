@@ -1,0 +1,46 @@
+{
+  "name": "multiscroll.js",
+  "version": "0.1.7",
+  "homepage": "http://alvarotrigo.com/multiScroll/",
+  "authors": [
+    "Alvaro Trigo https://github.com/alvarotrigo"
+  ],
+  "description": "Create beautiful fullscreen multi-scrolling websites",
+  "main": [
+    "jquery.multiscroll.js",
+    "jquery.multiscroll.css"
+  ],
+  "keywords": [
+    "jquery",
+    "scrolling",
+    "multiscroll",
+    "split",
+    "divided",
+    "panels",
+    "layouts",
+    "multi-scroll",
+    "split page"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples"
+  ],
+  "dependencies": {
+    "jquery": "^1.x",
+    "jquery.ui": "latest"
+  },
+  "_release": "0.1.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.7",
+    "commit": "f6bddb69f8d539afaad0158321c6ce3f34de1e06"
+  },
+  "_source": "git://github.com/alvarotrigo/multiscroll.js.git",
+  "_target": "~0.1.7",
+  "_originalSource": "multiscroll.js"
+}
